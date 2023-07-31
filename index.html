@@ -20,12 +20,20 @@ body {
 }
 
 #fadeimg::before {
-  background-color: 	white;
+  object-fit:cover;
   height: 100%;
   width: 100%;
   float: left;
   overflow: hidden;
   margin-left: 0px;
+}
+#brawspic{
+  border-radius:50%
+  float: center;
+  overflow: hidden;
+  width:30%;
+  margin-left: 0px;
+}
 }
 
 
@@ -34,7 +42,7 @@ body {
 <div id="pod">
   
   <div id="fadeimg">
-      <img src="carina.png" style=height: 100%; width: 100%; object-fit: contain >
+      <img src="carina.png" class="cover" >
   </div>
 
   </div>
