@@ -12,14 +12,25 @@ body {
 
 
 
-.pod {
+.container {
   position: relative;
   width: 100%;
   height: 500px;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%), linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 30%), url("carina.png"); /* Replace with the actual path to your background image */
+  background-image: url("carina.png")
   background-size: cover; /* Adjust as needed to fit your background image */
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.container::before,
+.container::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 50%;
+            background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value to set the opacity */
+            z-index: 1;
 }
 .centered-container {
             position: absolute;
@@ -43,7 +54,7 @@ body {
 
 </style>
 </head>
-<div class="pod">
+<div class="container">
   
  <div class="centered-container">
             <img src="brawspic.png" class="brawspic">
