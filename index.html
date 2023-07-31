@@ -12,57 +12,38 @@ body {
 
 
 
-.container {
-  position: relative;
+.pod {
   width: 100%;
   height: 500px;
-  background-image: url("carina.png")
-  background-size: cover; /* Adjust as needed to fit your background image */
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color:	white;
+  overflow: hidden;
 }
 
-.container::before,
-.container::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 50%;
-            background-color: rgba(255, 255, 255, 0.7); /* Adjust the alpha value to set the opacity */
-            z-index: 1;
-}
-.centered-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+.cover {
+  float: left;
+  object-fit: cover;
+  height: 100%;
+  width: 70%;
+  overflow: hidden;
 }
 .brawspic{
-  width:33.33%;
-}
-.centered-text {
-            font-size: 24px; /* Adjust the font size as needed */
-            color: white; /* Set the text color to white */
-            font-weight: bold; /* Make the text bold */
-            font-family: "Helvetica Neue", Arial, sans-serif; /* Use a readable font */
-            margin-top: 10px; /* Add some space between the image and text */
+  float: right
+  width:25%;
 }
 
 
 
 </style>
 </head>
-<div class="container">
+<div id="pod">
   
- <div class="centered-container">
-            <img src="brawspic.png" class="brawspic">
-            <div class="centered-text">Carlos Gafa'</div>
-        </div>
+  
+ <img src="carina.png" class="cover" >
+ <img src="brawspic.png" class="brawspic">
+
 </div>
 
-
+</div>
 
 
 
