@@ -24,7 +24,8 @@ body {
   height: 100%;
   width: 100%;
   float: left;
-  -webkit-mask-image:-webkit-gradient(linear, left top, right bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+  background-image: linear-gradient(to left, white 100%, transparent 80%),
+                    src="pillars.png" style=object-fit: contain;
   overflow: hidden;
   margin-left: -100px;
 }
@@ -35,7 +36,7 @@ body {
 <div id="pod">
   
   <div id="fadeimg">
-      <img src="pillars.png" style=height: 100%; width: 100%; object-fit: contain >
+
   </div>
 
 </div>
