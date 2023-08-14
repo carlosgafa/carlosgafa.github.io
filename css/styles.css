@@ -559,6 +559,11 @@ progress {
   }
 }
 
+.list-color {
+  padding-left: 0;
+  list-style-color: var(--bs-primary-rgb);
+}
+
 .list-unstyled {
   padding-left: 0;
   list-style: none;
