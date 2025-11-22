@@ -1,1 +1,32 @@
-{"icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}]}
+{
+    "name": "Gafa Statistics & Analytics Consulting Malta",
+    "short_name": "Gafa Analytics",
+    "description": "Professional statistics consulting in Malta. Expert support for student dissertations, theses, local newspaper data analysis, and predictive modeling.",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#F5F5F5",
+    "theme_color": "#2B4A4F",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "/icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": [
+        "consulting",
+        "education",
+        "productivity",
+        "finance"
+    ],
+    "lang": "en-MT",
+    "dir": "ltr"
+}
