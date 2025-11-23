@@ -200,7 +200,6 @@
     <!-- HOME VIEW TEMPLATE -->
     <template id="view-home">
         <div class="fade-in">
-            <!-- Hero Section -->
             <section class="relative py-20 lg:py-32 overflow-hidden">
                 <div class="absolute top-0 right-0 -mr-20 -mt-20 w-96 h-96 bg-brand-teal/5 rounded-full blur-3xl"></div>
                 <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-96 h-96 bg-brand-teal/5 rounded-full blur-3xl"></div>
@@ -214,13 +213,23 @@
                         <p class="text-xl text-gray-600 mb-10 leading-relaxed">
                             Specialized statistical consulting and tutoring for dissertations, theses, and business data analytics. I bridge the gap between complex raw data and clear, publishable insights.
                         </p>
+                        
                         <div class="flex flex-col sm:flex-row gap-4">
-                            <button onclick="scrollToSection('services')" class="bg-brand-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand-teal/30 flex items-center justify-center">
-                                Explore Services <i data-lucide="arrow-down" class="ml-2 w-4 h-4"></i>
-                            </button>
+                            <a href="https://forms.gle/3qqL7UAzzVtSrdDr5" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            onclick="document.getElementById('contact')?.scrollIntoView({behavior:'smooth'}); location.hash = '#contact';"
+                            class="md:hidden bg-brand-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-dark transition shadow-lg shadow-brand-teal/30 flex items-center justify-center">
+                                Get in Touch <i data-lucide="mail" class="ml-2 w-4 h-4"></i>
+                            </a>
+
                             <button onclick="switchView('projects')" class="bg-white text-brand-teal border-2 border-brand-teal/20 px-8 py-4 rounded-full font-semibold hover:border-brand-teal hover:bg-brand-teal/5 transition flex items-center justify-center">
                                 View Projects <i data-lucide="arrow-right" class="ml-2 w-4 h-4"></i>
                             </button>
+
+                            <button onclick="scrollToSection('services')" class="bg-white text-brand-teal border-2 border-brand-teal/20 px-8 py-4 rounded-full font-semibold hover:border-brand-teal hover:bg-brand-teal/5 transition flex items-center justify-center">
+                                Explore Services <i data-lucide="arrow-down" class="ml-2 w-4 h-4"></i>
+                            </button> 
                         </div>
                     </div>
                 </div>
